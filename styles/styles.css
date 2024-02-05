@@ -1,0 +1,13 @@
+body {
+    margin:0px;
+}
+
+.whole-website {
+    display: flex;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
