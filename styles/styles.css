@@ -1,3 +1,8 @@
+:root {
+    --plant-margin: 5vh;
+    --right-margin: 30vh;
+}
+
 body {
     margin:0px;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,15 +12,47 @@ body {
     display: flex;
 }
 
-img {
-    width: 500px;
-    height: 500px;
+.left-section {
+    background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.credit-link {
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.description, fieldset {
+    padding-left: var(--plant-margin);
+    padding-right: var(--right-margin);
+}
+
+.description, .lets-do-it, button {
+    font-weight: bold;
+}
+
+fieldset {
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+}
 
 button {
     background-color: #596D48;
     color: white;
+    padding: 2vh var(--plant-margin); /* plant-margin wasn't made for this but it works */
+    border: 0;
+    border-radius: 10px;
+    margin-left: var(--plant-margin);
+    margin-top: var(--plant-margin);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 input {
@@ -23,6 +60,17 @@ input {
 }
 
 input:focus {
-    border-color: lightblue;
+    border-color: blue;
     box-shadow: 0 4px 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-link {
+    font-weight: 500;
+    margin-left: var(--plant-margin);
+    margin-top: var(--plant-margin);
 }

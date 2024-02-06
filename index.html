@@ -14,15 +14,18 @@
 </head>
 <body>
     <div class="whole-website">
-        <div class="left-cosmetic">
+
+        <div class="left-section">
              <!-- <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Photo of plants by Halie West on Unsplash" class="plant-image"> -->
             <div class="odin-logo">
                 <img src="images/odin-lined.png" alt="odin logo" class="odin-image">
                 <p class="odin-text">ODIN</p>
             </div>
-            <a href="https://unsplash.com/pt-br/fotografias/planta-da-folha-verde-na-fotografia-de-perto-25xggax4bSA">Photo by Halie West on Unsplash</a>
+
+            <a  class="credit-link" href="https://unsplash.com/pt-br/fotografias/planta-da-folha-verde-na-fotografia-de-perto-25xggax4bSA">Photo by Halie West on Unsplash</a>
         </div>
-        <div class="left-cosmetic">
+
+        <div class="right-section">
             <div class="description">
                 <p class="description-text">
                     This is not a real online service! You know you need something
@@ -34,32 +37,47 @@
             </div>
             <div class="form-area">
 
-                <p>Let's do this!</p>
-
+                
                 <form action="" method="post">
                     <fieldset>
-                        <label for="form-first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="form-first-name">
+                        <p class="lets-do-it">Let's do this!</p>
+                        
+                        <div>
+                            <label for="form-first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="form-first-name">                            
+                        </div>
 
-                        <label for="form-last-name">LAST NAME</label>
-                        <input type="text" name="first-name" id="form-first-name">
+                        <div>
+                            <label for="form-last-name">LAST NAME</label>
+                            <input type="text" name="first-name" id="form-first-name">                            
+                        </div>
 
-                        <label for="form-email">EMAIL</label>
-                        <input type="email" name="form-email" id="form-email">
+                        <div>
+                            <label for="form-email">EMAIL</label>
+                            <input type="email" name="form-email" id="form-email">                            
+                        </div>
 
-                        <label for="form-telephone">PHONE NUMBER</label>
-                        <input type="tel" name="form-telephone" id="form-telephone">
+                        <div>
+                            <label for="form-telephone">PHONE NUMBER</label>
+                            <input type="tel" name="form-telephone" id="form-telephone">
+                        </div>
 
-                        <label for="form-password">PASSWORD</label>
-                        <input type="password" name="form-password" id="form-password" class="error">
 
-                        <label for="form-confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="form-confirm-password" id="form-confirm-password" class="error">
+                        <div>
+                            <label for="form-password">PASSWORD</label>
+                            <input type="password" name="form-password" id="form-password" class="error">                            
+                        </div>            
+
+                        <div>
+                            <label for="form-confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="form-confirm-password" id="form-confirm-password" class="error">
+                        </div>   
+                                 
                     </fieldset>
 
                     <button type="submit">Create Account</button>
 
-                    <p>Already have an account? <a href="">Log in</a></p>
+                    <p class="login-link">Already have an account? <a href="">Log in</a></p>
                 </form>
 
             </div>
