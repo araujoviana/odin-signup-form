@@ -15,7 +15,7 @@
 <body>
     <div class="whole-website">
         <div class="left-cosmetic">
-            <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Photo of plants by Halie West on Unsplash">
+             <!-- <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Photo of plants by Halie West on Unsplash" class="plant-image"> -->
             <div class="odin-logo">
                 <img src="images/odin-lined.png" alt="odin logo" class="odin-image">
                 <p class="odin-text">ODIN</p>
@@ -27,13 +27,41 @@
                 <p class="description-text">
                     This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.
-                    Sign up now to get started.
+                    Sign up <em>now</em> to get started.
                     <br><br>
-                    You know you want to.
+                    You <em>know</em> you want to.
                 </p>
             </div>
             <div class="form-area">
-                
+
+                <p>Let's do this!</p>
+
+                <form action="" method="post">
+                    <fieldset>
+                        <label for="form-first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="form-first-name">
+
+                        <label for="form-last-name">LAST NAME</label>
+                        <input type="text" name="first-name" id="form-first-name">
+
+                        <label for="form-email">EMAIL</label>
+                        <input type="email" name="form-email" id="form-email">
+
+                        <label for="form-telephone">PHONE NUMBER</label>
+                        <input type="tel" name="form-telephone" id="form-telephone">
+
+                        <label for="form-password">PASSWORD</label>
+                        <input type="password" name="form-password" id="form-password" class="error">
+
+                        <label for="form-confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="form-confirm-password" id="form-confirm-password" class="error">
+                    </fieldset>
+
+                    <button type="submit">Create Account</button>
+
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </form>
+
             </div>
         </div>
     </div>

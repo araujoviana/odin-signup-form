@@ -12,3 +12,17 @@ img {
     height: 500px;
 }
 
+
+button {
+    background-color: #596D48;
+    color: white;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    border-color: lightblue;
+    box-shadow: 0 4px 8px;
+}
