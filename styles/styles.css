@@ -6,7 +6,6 @@
 body {
     margin:0px;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
 }
 
 .whole-website {
@@ -24,7 +23,7 @@ body {
     margin: 0 auto; /* Center the image horizontally */
 }
 
-.odin-logo {
+.odin-logo, .credit-link {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -37,6 +36,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 .odin-image {
     width: 20%;
@@ -51,6 +51,9 @@ body {
 
 .credit-link {
     color: white;
+    top: 95%;
+    background-color: rgba(0, 0, 0, 0); /* certainly not the best way of removing a background */
+    text-decoration: none;
 }
 
 .right-section {
@@ -72,12 +75,14 @@ body {
     margin-top: 15vh;
 }
 
+/* I really dont know why the inputs are doing 3x2 instead of 2x3*/
+
 fieldset {
     border: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    gap: 10px; /* Adjust the gap between the columns */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
     padding-bottom: var(--plant-margin);
 }
 
@@ -124,4 +129,11 @@ label {
 .actual-login-link {
     color: green;
     text-decoration: none;
+}
+
+.error-text {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: var(--plant-margin);
 }

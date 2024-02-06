@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap" rel="stylesheet">    
+    <script src="scripts/scripts.js" defer></script>
     <!-- crédito da foto pra usar dps:
     Foto de <a href="https://unsplash.com/pt-br/@wolfgang_hasselmann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wolfgang Hasselmann</a> na <a href="https://unsplash.com/pt-br/fotografias/um-grande-campo-com-uma-casa-no-meio-dele-ExFiWVqUG-4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     -->
@@ -39,38 +40,38 @@
             <div class="form-area">
 
                 
-                <form action="" method="post">
+                <form action="" method="post" class="main-form">
                     <fieldset>
                         <p class="lets-do-it">Let's do this!</p>
                         
                         <div class="form-family">
                             <label for="form-first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="form-first-name" required>                            
+                            <input type="text" name="first-name" id="form-first-name" required value="John">                          
                         </div>
 
                         <div class="form-family">
                             <label for="form-last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="form-last-name" required>                            
+                            <input type="text" name="last-name" id="form-last-name" required value="Smith">                            
                         </div>
 
                         <div class="form-family">
                             <label for="form-email">EMAIL</label>
-                            <input type="email" name="form-email" id="form-email" required>                            
+                            <input type="email" name="form-email" id="form-email" required value="a@a.com">                            
                         </div>
 
                         <div class="form-family">
                             <label for="form-telephone">PHONE NUMBER</label>
-                            <input type="tel" name="form-telephone" id="form-telephone" required>
+                            <input type="tel" name="form-telephone" id="form-telephone" required value="31232132">
                         </div>
 
                         <div class="form-family">
                             <label for="form-password">PASSWORD</label>
-                            <input type="password" name="form-password" id="form-password" class="error" required>                            
+                            <input type="password" name="form-password" id="form-password" class="error" required minlength="10" value="hotdogbanana">                            
                         </div>            
 
                         <div class="form-family">
                             <label for="form-confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="form-confirm-password" id="form-confirm-password" class="error" required>
+                            <input type="password" name="form-confirm-password" id="form-confirm-password" class="error" required minlength="10" value="hotdogbanan">
                         </div>   
 
                     </fieldset>
